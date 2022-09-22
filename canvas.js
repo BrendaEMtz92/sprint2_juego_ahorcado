@@ -98,7 +98,7 @@ function dibujarHorcaDos(){
 function dibujarHorcaTres(){
 
     var horcaTres = new Image();
-    horcaTres.src ="imagenes/horcaTres.png"; 
+    horcaTres.src ="imagenes/horcatres.png"; 
     horcaTres.onload = function (){
     tablero.drawImage (horcaTres, 855, 45);
     }
