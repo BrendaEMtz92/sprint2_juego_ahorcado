@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alura Challenge - Desafío 2 - Juego Ahorcado</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel ="stylesheet" href="style-ahorcado.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebcd167341.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><img  id="logoInicio" src="imagenes/logo.png" alt="logoAlura"></h1>
+    </header>
+    <main>
+        <section class ="inicio">
+            <button type="submit" id="iniciarJuego"  onclick="iniciarJuego()"><img src="imagenes/iniciarjuego.png" alt ="botonInicioJuego"></button>
+            <button type="submit" id="agregarPalabra" onclick="agregarPalabraNueva()"><img src="imagenes/agregarpalabra.png" alt="botonAgregarPalabra"></button>
+        </section>
+        
+        <section class = "juego">
+                <div class="tableroJuego">
+                    <canvas id="tablero" width="1200" height="960"></canvas>
+                 </div>
+                    <button type ="submit" id="nuevoJuego" onclick="nuevoJuego()"><img src= "imagenes/nuevojuego.png" alt="botonNuevoJuego"></button>
+                     <button type ="submit" id="desistir"  onclick ="desistir()"><img src= "imagenes/desisitir.png" alt ="botonDesistir"></button>
+        </section>
+    
+        <section class = "nuevaPalabra">
+        
+                <input type="text" class ="entradaTexto" id = "mensajeEntrada"  placeholder="Ingrese una palabra en mayusculas" oninput="this.value =this.value.replace(/[^A-Z ]/,'')" autofocus  ></input>
+                <img id="aviso" src="imagenes/aviso.jpg" alt="signoAviso">
+                <rect id="reglas">Solo mayusculas, no acentos ni caracteres especiales con un máx. de 8 letras. </rect>
+                 <button type="submit" id="guardarPalabra" onclick=" guardarPalabraNueva ()" ><img src="imagenes/guardar.png" alt="botonGuardar"> </button>
+                <button type="submit" id="cancelar"  onclick="cancelar()"> <img src="imagenes/cancelar.png" alt="botonCancelar"> </button>
+
+        </section>
+    </main>
+    <footer id="main-footer">
+        <div id="footer-call-to-action"></div>
+    
+        <div id="footer-bottom"class="container">
+         <div class="copyright">
+                <br>  &copy;2022 Derechos Reservados </br>
+                <br>  Diseño y desarrollo web: Brenda Elizabeth Martínez López   </br>
+                <br> e-mail: brenda.mtzlpez@gmail.com </br>
+                
+                <nav id="footer-menu">
+                    <ul >
+                        <li><a href="https://www.facebook.com/liz.brenda.7"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/brenda-elizabeth-mart%C3%ADnez-l%C3%B3pez-a62187b4/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/BrendaE1992"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    </ul>
+                </nav>      
+ 
+        </div>
+        </div>
+    </footer>
+
+    
+    <script src ="ahorcado.js"></script>
+    <script src ="canvas.js"></script>
+   
+</body>
+</html>

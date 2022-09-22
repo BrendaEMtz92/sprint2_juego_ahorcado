@@ -1,0 +1,260 @@
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: url(imagenes/bg.png);
+    
+}
+
+#logoInicio{
+    width: 31.09px;
+    height: 48px;
+    left: 44px;
+
+    position: absolute;
+    left:84px;
+    right: 1324.91px;
+    top: 40px;
+    bottom: 936px; 
+}
+
+#iniciarJuego{
+    border:none;
+    background:none;
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 760px;
+    top: 402px;
+    cursor: pointer;
+}
+
+#agregarPalabra{
+    border:none;
+    background:none;
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    left: 780px;
+    top: 554px;
+    cursor: pointer;
+}
+
+img:hover{
+    
+    filter: saturate(180%);
+    transform: scale(1.2);
+    transition: 1s all;
+}
+
+
+
+.tablero{
+    width:100%; 
+    height:100vh; 
+    position:relative; 
+    
+}
+
+#tablero{
+    position:absolute; 
+    top:0;bottom:0;right:0;left:0; 
+    margin:auto 150px; 
+   
+}
+
+#nuevoJuego{
+    border:none;
+    background:none;
+    position: absolute;
+    width: 332px;
+    height: 67px;
+    left:  575px;
+    top: 750px;
+    cursor: pointer;
+}
+
+
+
+#desistir{
+    border:none;
+    background:none;
+    position: absolute;
+    width: 332px;
+    height: 67px;
+    left: 945px;
+    top: 750px;
+    cursor: pointer;
+}
+
+
+.entradaTexto{
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 590px;
+    top: 256px;
+    bottom: 720px;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    text-align:Left;
+    vertical-align: Top;
+    border: 1px solid #FFFFFF00;
+    background: #FFFFFF00;
+    /* background: url(imagenes/bg.png); */
+    outline: none;
+    
+}
+
+
+
+
+#aviso{
+    width: 16px;
+    height: 16px;
+    
+    position: absolute;
+    left: 590px;
+    right: 1048px;
+    top: 668px;
+    bottom: 340px;
+    background: #495057;
+  
+}
+#reglas{
+    height: 18px;
+    width: 428px;
+    border-radius: nullpx;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;    
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    position: absolute;
+    left: 610px;
+    right: 949px;
+    top: 667px;
+    bottom: 339px;
+
+}
+
+
+#guardarPalabra{
+    border:none;
+    background:none;
+    position: absolute;
+    width: 332px;
+    height: 67px;
+    left: 575px;
+    top: 701px;
+    cursor: pointer;
+}
+
+
+#cancelar{
+    border:none;
+    background:none;
+    position: absolute;
+    width: 332px;
+    height: 67px;
+    left: 945px;
+    top: 701px;
+    cursor: pointer;
+}
+
+
+#footer-call-to-action{
+    background:none;
+    color: white;
+    position: relative;
+    margin-top: -2px;
+    padding: 500px;
+    clear: both;
+    z-index: -2;
+    box-sizing: border-box;
+}
+
+#footer-call-to-action p{
+    margin: 0 auto;
+    align-content: center;
+}
+
+#footer-bottom{
+    display:table;
+    background-color:#0A3871 ;
+    width: 135%;
+    align-content: center;
+}
+
+
+
+
+#footer-bottom #footer-menu, #footer-bottom  .copyright{
+    display: table-cell;
+    vertical-align: top;
+    padding: auto;
+    width: 110%;
+    padding: none;
+    color:#FFFFFF;  
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+    
+}
+
+#footer-bottom #footer-menu ul{
+    margin:auto;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+
+#footer-bottom #footer-menu ul li{
+    display: inline-block;
+    list-style: none;
+    text-align: center  ;
+
+}
+
+#footer-bottom #footer-menu ul li::after{
+    content: "/";
+  
+}
+
+#footer-bottom #footer-menu ul li:last-child::after{
+    content: "";
+}
+
+#footer-bottom #footer-menu ul li a {
+    display: inline-block;
+    padding: 0 1em;
+    color: #7e89a3;
+   
+}
+#footer-bottom #footer-menu ul li a:hover{
+    color:#50c5ab;
+} 
+
+@media screen and (max-width:480px){
+    #main-footer{
+        width: auto;
+    }
+    .inicio, .juego, .tableroJuego, .nuevaPalabra{
+        width:auto;
+        text-align: center;
+    }
+
+}
+
